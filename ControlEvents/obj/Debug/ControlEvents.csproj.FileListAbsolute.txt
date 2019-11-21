@@ -1,0 +1,25 @@
+D:\Projects\2017\UACS\ControlEvents\ControlEvents\bin\ControlEvents.dll.config
+D:\Projects\2017\UACS\ControlEvents\ControlEvents\bin\ControlEvents.dll
+D:\Projects\2017\UACS\ControlEvents\ControlEvents\bin\ControlEvents.pdb
+D:\Projects\2017\UACS\ControlEvents\ControlEvents\obj\Debug\ControlEvents.csprojResolveAssemblyReference.cache
+D:\Projects\2017\UACS\ControlEvents\ControlEvents\obj\Debug\ControlEvents.csproj.CoreCompileInputs.cache
+D:\Projects\2017\UACS\ControlEvents\ControlEvents\obj\Debug\ControlEvents.dll
+D:\Projects\2017\UACS\ControlEvents\ControlEvents\obj\Debug\ControlEvents.pdb
+C:\Users\Asus\Desktop\internet programing\ControlEvents\ControlEvents\bin\ControlEvents.dll.config
+C:\Users\Asus\Desktop\internet programing\ControlEvents\ControlEvents\bin\ControlEvents.dll
+C:\Users\Asus\Desktop\internet programing\ControlEvents\ControlEvents\bin\ControlEvents.pdb
+C:\Users\Asus\Desktop\internet programing\ControlEvents\ControlEvents\obj\Debug\ControlEvents.dll
+C:\Users\Asus\Desktop\internet programing\ControlEvents\ControlEvents\obj\Debug\ControlEvents.pdb
+C:\Users\Asus\Desktop\internet programing\ControlEvents\ControlEvents\obj\Debug\ControlEvents.csprojAssemblyReference.cache
+E:\Mid-Term\ControlEvents\bin\ControlEvents.dll.config
+E:\Mid-Term\ControlEvents\bin\ControlEvents.dll
+E:\Mid-Term\ControlEvents\bin\ControlEvents.pdb
+E:\Mid-Term\ControlEvents\obj\Debug\ControlEvents.csprojAssemblyReference.cache
+E:\Mid-Term\ControlEvents\obj\Debug\ControlEvents.dll
+E:\Mid-Term\ControlEvents\obj\Debug\ControlEvents.pdb
+C:\Users\Asus\Desktop\Mid-Term\ControlEvents\bin\ControlEvents.dll.config
+C:\Users\Asus\Desktop\Mid-Term\ControlEvents\bin\ControlEvents.dll
+C:\Users\Asus\Desktop\Mid-Term\ControlEvents\bin\ControlEvents.pdb
+C:\Users\Asus\Desktop\Mid-Term\ControlEvents\obj\Debug\ControlEvents.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Mid-Term\ControlEvents\obj\Debug\ControlEvents.dll
+C:\Users\Asus\Desktop\Mid-Term\ControlEvents\obj\Debug\ControlEvents.pdb
