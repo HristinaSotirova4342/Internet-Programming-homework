@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://uacs.gov.mk/webservices" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://uacs.gov.mk/webservices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://uacs.gov.mk/webservices">
+      <s:element name="Add3Numbers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="firstNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="secondNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="thirdNumber" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Add3NumbersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Add3NumbersResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Add">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="firstNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="secondNumber" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Substriction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="firstNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="secondNumber" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubstrictionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubstrictionResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Multiplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="firstNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="secondNumber" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MultiplicationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MultiplicationResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Division">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="firstNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="secondNumber" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DivisionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DivisionResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCalculations">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCalculationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCalculationsResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Add3NumbersSoapIn">
+    <wsdl:part name="parameters" element="tns:Add3Numbers" />
+  </wsdl:message>
+  <wsdl:message name="Add3NumbersSoapOut">
+    <wsdl:part name="parameters" element="tns:Add3NumbersResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddSoapIn">
+    <wsdl:part name="parameters" element="tns:Add" />
+  </wsdl:message>
+  <wsdl:message name="AddSoapOut">
+    <wsdl:part name="parameters" element="tns:AddResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubstrictionSoapIn">
+    <wsdl:part name="parameters" element="tns:Substriction" />
+  </wsdl:message>
+  <wsdl:message name="SubstrictionSoapOut">
+    <wsdl:part name="parameters" element="tns:SubstrictionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MultiplicationSoapIn">
+    <wsdl:part name="parameters" element="tns:Multiplication" />
+  </wsdl:message>
+  <wsdl:message name="MultiplicationSoapOut">
+    <wsdl:part name="parameters" element="tns:MultiplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="DivisionSoapIn">
+    <wsdl:part name="parameters" element="tns:Division" />
+  </wsdl:message>
+  <wsdl:message name="DivisionSoapOut">
+    <wsdl:part name="parameters" element="tns:DivisionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCalculationsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCalculations" />
+  </wsdl:message>
+  <wsdl:message name="GetCalculationsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCalculationsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CalculatorWebServiceSoap">
+    <wsdl:operation name="Add">
+      <wsdl:input name="Add3Numbers" message="tns:Add3NumbersSoapIn" />
+      <wsdl:output name="Add3Numbers" message="tns:Add3NumbersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Add">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Adding two numbers</wsdl:documentation>
+      <wsdl:input message="tns:AddSoapIn" />
+      <wsdl:output message="tns:AddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Substriction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Substraction of two numbers</wsdl:documentation>
+      <wsdl:input message="tns:SubstrictionSoapIn" />
+      <wsdl:output message="tns:SubstrictionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Multiplication">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Multiplication of two numbers</wsdl:documentation>
+      <wsdl:input message="tns:MultiplicationSoapIn" />
+      <wsdl:output message="tns:MultiplicationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Division">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Division of two numbers</wsdl:documentation>
+      <wsdl:input message="tns:DivisionSoapIn" />
+      <wsdl:output message="tns:DivisionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCalculations">
+      <wsdl:input message="tns:GetCalculationsSoapIn" />
+      <wsdl:output message="tns:GetCalculationsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CalculatorWebServiceSoap" type="tns:CalculatorWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Add">
+      <soap:operation soapAction="http://uacs.gov.mk/webservices/Add3Numbers" style="document" />
+      <wsdl:input name="Add3Numbers">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Add3Numbers">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add">
+      <soap:operation soapAction="http://uacs.gov.mk/webservices/Add" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Substriction">
+      <soap:operation soapAction="http://uacs.gov.mk/webservices/Substriction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Multiplication">
+      <soap:operation soapAction="http://uacs.gov.mk/webservices/Multiplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Division">
+      <soap:operation soapAction="http://uacs.gov.mk/webservices/Division" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCalculations">
+      <soap:operation soapAction="http://uacs.gov.mk/webservices/GetCalculations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CalculatorWebServiceSoap12" type="tns:CalculatorWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Add">
+      <soap12:operation soapAction="http://uacs.gov.mk/webservices/Add3Numbers" style="document" />
+      <wsdl:input name="Add3Numbers">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Add3Numbers">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add">
+      <soap12:operation soapAction="http://uacs.gov.mk/webservices/Add" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Substriction">
+      <soap12:operation soapAction="http://uacs.gov.mk/webservices/Substriction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Multiplication">
+      <soap12:operation soapAction="http://uacs.gov.mk/webservices/Multiplication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Division">
+      <soap12:operation soapAction="http://uacs.gov.mk/webservices/Division" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCalculations">
+      <soap12:operation soapAction="http://uacs.gov.mk/webservices/GetCalculations" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CalculatorWebService">
+    <wsdl:port name="CalculatorWebServiceSoap" binding="tns:CalculatorWebServiceSoap">
+      <soap:address location="http://localhost:55353/CalculatorWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CalculatorWebServiceSoap12" binding="tns:CalculatorWebServiceSoap12">
+      <soap12:address location="http://localhost:55353/CalculatorWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
